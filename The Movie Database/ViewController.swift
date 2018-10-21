@@ -12,6 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var a = DataProvider(source: APIEndpoints.Upcoming.baseUrl())
+        a.getMovies(page: 1)
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
